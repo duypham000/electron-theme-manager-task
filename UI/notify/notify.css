@@ -1,0 +1,191 @@
+.cls-1 {
+    fill: #218c74;
+    opacity: 0.7;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.ntf-msg{
+
+    position: absolute;
+    width: 200px;
+    cursor: pointer;
+    height: 60px;
+    user-select: none;
+    margin: 0;
+}
+
+
+
+.msg-back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.ntf-msg-ctn{
+    width: 100%;
+    height: 100%;
+    position: absolute;;
+    z-index: 5;
+    text-overflow: ellipsis;
+}
+
+.ntf-msg-ctn > *{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    
+}
+
+
+.ntf-msg-ctn > .title{
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    top: 3%;
+    max-width: 90%;
+    font-size: 1em;
+    font-family: Furore;
+}
+.ntf-msg-ctn > .text{
+    top: 40%;
+    width: 93%;
+    height: 55%;
+    font-size: 0.8em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+}
+
+.t-active{
+    animation-name: text-active;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+ 
+.m-active{
+    animation-name: mess-active;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.b-active{
+    animation-name: back-active;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.svg-active{
+    animation-name: svg-active;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+} 
+.tit-active{
+    animation-name: tit-active;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+} 
+
+.container {
+    width: 202px;
+    height: 180px;
+    position: absolute;
+    border-left: solid 1px #16a085;
+    border-right: solid 1px #16a085;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    padding: 0;
+    transform: translate(-50%, -50%);
+    overflow: auto;
+}
+
+.bor{
+    position: absolute;
+    width: 210px;
+    z-index: 10;
+    left: 50%;
+    margin: 0;
+    padding: 0;
+    transform: translate(-50%, -50%);
+}
+
+.bor-top{
+    top: 9.5%;
+}
+
+.bor-bot{
+    top: 91%;
+}
+@font-face {
+  font-family: Furore;
+  src: url(../../fonts/Furore.otf);
+}
+
+@keyframes mess-active{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        height: 170px;
+    }
+}
+
+@keyframes back-active{
+    100%{
+         d: path('M18.04,61.27C11.7,67.6,5.69,74.19,0,81.01l0,337.94c5.69,6.82,11.7,13.41,18.04,19.74V500h191.14h281.63 h191.14v-61.26c6.34-6.34,12.35-12.92,18.05-19.75V81.05c-5.69-6.82-11.71-13.4-18.05-19.73V0L490.81,0L209.19,0L18.04,0V61.27z')
+    }
+}
+
+@keyframes svg-active{
+    100%{
+        viewBox: '0 0 700 500'
+    }
+}
+@keyframes text-active{
+    100%{
+        top: 30%;
+        word-break: break-word;
+        overflow: auto;
+        white-space: unset; 
+    }
+}
+
+.st {
+    fill: #27ae60;
+}
+
+@keyframes tit-active{
+    100%{
+        top: 15%;
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #34495e; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1abc9c; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #16a085; 
+}

@@ -1,0 +1,45 @@
+{
+    "name": "clock",
+    "description": "",
+    "authors": "black cat",
+    "version": "1.0.0",
+    "main": "main.js",
+    "dependencies": {
+        "auto-launch": "^5.0.5",
+        "electron": "^7.1.7",
+        "electron-packager": "^14.1.1"
+    },
+    "devDependencies": {
+        "electron-builder": "^21.2.0"
+    },
+    "scripts": {
+        "start": "electron ."
+    },
+    "build": {
+        "appId": "yourappid",
+        "category": "your.app.category.type",
+        "dmg": {
+            "contents": [
+                {
+                    "x": 110,
+                    "y": 150
+                },
+                {
+                    "x": 240,
+                    "y": 150,
+                    "type": "link",
+                    "path": "/Applications"
+                }
+            ]
+        },
+        "linux": {
+            "target": [
+                "AppImage",
+                "deb"
+            ]
+        },
+        "win": {
+            "target": "NSIS"
+        }
+    }
+}

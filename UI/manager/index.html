@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Black cat's note'</title>
+    <link rel="stylesheet" href="manager.css">
+    <link rel="stylesheet" href="../../libs/photon-0.1.2-alpha/dist/css/photon.min.css">
+</head>
+
+<body>
+    <div class="window">
+        <header class="toolbar toolbar-header">
+            <h1 class="title">Header with actions</h1>
+
+            <div class="toolbar-actions">
+                <div class="btn-group">
+                    <button class="btn btn-default">
+                        <span class="icon icon-home"></span>
+                    </button>
+
+                </div>
+
+                <div class="btn-group pull-right">
+                    <button class="btn btn-default ">
+                        <span class="icon icon-minus-circled" style="color:#3498db"></span>
+                    </button>
+                    <button class="btn btn-default ">
+                        <span class="icon icon-cancel-circled" style="color:#fc605b"></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <div class="window-content">
+            <div class="pane-group">
+                <div class="pane-sm sidebar">
+                    <nav class="nav-group">
+                        <h5 class="nav-group-title">Favorites</h5>
+                        <span class="nav-group-item active">
+                            <span class="icon icon-cog"></span>
+                            Genernal
+                        </span>
+                        <a class="nav-group-item">
+                            <span class="icon icon-keyboard"></span>
+                            Shortcut
+                        </a>
+
+                    </nav>
+                </div>
+                <div class="pane">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> auto start
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="toolbar toolbar-footer">
+            <div class="toolbar-actions">
+                <button class="btn btn-default">
+                    Cancel
+                </button>
+
+                <button class="btn btn-primary pull-right">
+                    Save
+                </button>
+            </div>
+        </footer>
+    </div>
+    <script src="manager.js"></script>
+</body>
+
+</html>
